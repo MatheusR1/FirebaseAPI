@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <main>
+      <h1><%= title %></h1>
+      <p>Bem vindo(a) ao <strong><%= title %></strong></p>
+      <h2>produtos cadastrados<h2>
+        <table border="2">
+          <thead>
+            <tr>
+              <td>Nome</td>
+              <td>quantidade</td>
+              <td>preço</td>
+            </tr>
+          </thead>
+          <tbody>
+            <% produtos.forEach(function(data) { %>
+              <tr>
+                <td><%= data.name%></td>
+                <td><%= data.quantidade %></td>
+                <td><%= data.preco %></td>
+              </tr>
+           <% }) %>
+         </tbody>
+    </main>
+    <footer>
+       
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+  </body>
+</html>
