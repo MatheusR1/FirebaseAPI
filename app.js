@@ -18,7 +18,6 @@ app.set('view engine', 'ejs');
 //iniciando firebase
 firebase.initializeApp(FBconfig);
 
-
 // chamando as rotas do servidor
 
 app.get("/add", controller.getAdd);

@@ -41,5 +41,4 @@ exports.postAdd = ('/', (req, res) => {
 
     db.ref('Products').push(newprodutos);
     res.redirect('/add');
-
 });
